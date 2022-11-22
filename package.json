@@ -170,7 +170,7 @@
 		"@types/react-native-background-timer": "^2.0.0",
 		"@types/react-native-config-reader": "^4.1.0",
 		"@types/react-native-platform-touchable": "^1.1.2",
-		"@types/react-native-scrollable-tab-view": "^0.10.2",
+		"@types/react-native-scrollable-tab-view": "^0.10.3",
 		"@types/react-native-vector-icons": "^6.4.10",
 		"@types/react-test-renderer": "^17.0.1",
 		"@types/semver": "^7.3.9",
