@@ -64,7 +64,7 @@
 		"expo": "^45.0.5",
 		"expo-apple-authentication": "4.2.1",
 		"expo-av": "11.2.3",
-		"expo-file-system": "14.0.0",
+		"expo-file-system": "15.1.1",
 		"expo-haptics": "11.2.0",
 		"expo-keep-awake": "10.1.1",
 		"expo-local-authentication": "12.2.0",
