@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "319144703434",
+    "project_id": "amg-app-9f961",
+    "storage_bucket": "amg-app-9f961.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319144703434:android:7566f617fee84521004b33",
+        "android_client_info": {
+          "package_name": "amg.nlsi.reactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319144703434-s3f1mqa24tn3sieve92c9r4q34695s3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsbAPuVhdISnPxSqQLMNkSZ-fsNtlfN1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319144703434-s3f1mqa24tn3sieve92c9r4q34695s3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319144703434:android:e9df46188c149fca004b33",
+        "android_client_info": {
+          "package_name": "chat.rocket.reactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319144703434-s3f1mqa24tn3sieve92c9r4q34695s3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsbAPuVhdISnPxSqQLMNkSZ-fsNtlfN1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319144703434-s3f1mqa24tn3sieve92c9r4q34695s3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
