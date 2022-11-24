@@ -128,7 +128,13 @@ export interface IUserContact {
 	phone: string;
 	fav?: boolean;
 }
+export interface IUserOtpActivate{
+	otpCode:string;
+	rqActivate: boolean
+	activate:boolean
+	otpCreatedTime:Date
 
+}
 export type TUserContactModel = IUserContact & Model;
 
 export interface IUser extends IRocketChatRecord, ILoggedUser {
@@ -136,6 +142,7 @@ export interface IUser extends IRocketChatRecord, ILoggedUser {
 	createdAt?: Date;
 	type?: string;
 	active?: boolean;
+	otp?:IUserOtpActivate;
 	services?: IUserServices;
 	statusConnection?: string;
 	lastLogin?: Date;

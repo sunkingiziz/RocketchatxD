@@ -12,6 +12,7 @@ import Touch from '../../containers/Touch';
 import KeyboardView from '../../containers/KeyboardView';
 import sharedStyles from '../Styles';
 import scrollPersistTaps from '../../lib/methods/helpers/scrollPersistTaps';
+import { requestOtpActivate } from '../../lib/services/restApi';
 import { showConfirmationAlert, showErrorAlert } from '../../lib/methods/helpers';
 import { LISTENER } from '../../containers/Toast';
 import EventEmitter from '../../lib/methods/helpers/events';
@@ -492,7 +493,10 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 			return null;
 		}
 	};
-	activateAccount =()=>{
+	activateAccount = async ()=>{
+		await requestOtpActivate();
+	}
+	sendOtp=()=>{
 		logEvent(events.ACTIVATE_ACCOUNT);
 		this.props.showActionSheet({
 			children: <ActivateAccountActionSheetContent />,
@@ -651,6 +655,14 @@ class ProfileView extends React.Component<IProfileViewProps, IProfileViewState> 
 							
 							testID='profile-view-activate_account'
 							backgroundColor='green'
+						/>
+						<Button
+							title={I18n.t('Verify_OTP')}
+							type='primary'
+							onPress={this.sendOtp}
+							
+							testID='profile-view-sendOtp'
+							backgroundColor='grey'
 						/>
 						<Button
 							title={I18n.t('Logout_from_other_logged_in_locations')}

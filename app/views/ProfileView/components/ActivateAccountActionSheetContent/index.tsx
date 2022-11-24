@@ -3,7 +3,7 @@ import React from 'react';
 import { useActionSheet } from '../../../../containers/ActionSheet';
 import ActionSheetContentWithInputAndSubmit from '../../../../containers/ActionSheet/ActionSheetContentWithInputAndSubmit';
 import i18n from '../../../../i18n';
-import { activateAccount } from '../../../../lib/services/restApi';
+import { sendOtpActivate } from '../../../../lib/services/restApi';
 import { useTheme } from '../../../../theme';
 
 
@@ -15,7 +15,7 @@ export function ActivateAccountActionSheetContent(): React.ReactElement {
 
 	const handleActivateAccount = async (otp: string) => {
 		hideActionSheet();
-		await activateAccount(otp);
+		await sendOtpActivate(otp);
 	};
 
 	return (
@@ -27,7 +27,7 @@ export function ActivateAccountActionSheetContent(): React.ReactElement {
 			placeholder={i18n.t('OTP_code')}
 			testID='profile-view-activate-account-sheet'
 			iconName='circle-check'
-            iconColor={colors.successColor}
+			iconColor={colors.successColor}
 			confirmTitle={i18n.t('Activate_account')}
 			confirmBackgroundColor={colors.successColor}
 		/>

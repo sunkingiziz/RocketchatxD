@@ -64,11 +64,11 @@ export type UsersEndpoints = {
 	'users.deleteOwnAccount': {
 		POST: (params: { password: string; confirmRelinquish: boolean }) => { success: boolean };
 	};
-	'users.requestActivate': {
-		POST: () => { success: boolean };
+	'users.requestOtpActivate': {
+		POST: () => { request: boolean };
 	};
-	'users.sendOtp':{
-		POST: (params: {otp:string})=>{success:boolean}
+	'users.sendOtpActivate':{
+		POST: (params: {otpCode:string})=>{request:boolean,otp:string}
 	}
 
 };

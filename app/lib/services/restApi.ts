@@ -944,6 +944,6 @@ export const saveUserProfileMethod = (
 export const deleteOwnAccount = (password: string, confirmRelinquish = false): any =>
 	// RC 0.67.0
 	sdk.post('users.deleteOwnAccount', { password, confirmRelinquish });
-export const activateAccount = (otp:string):any=>
-
-    sdk.post('users.activateAccount',{otp});
+export const requestOtpActivate = ():any=> sdk.post('users.requestOtpActivate');
+export const sendOtpActivate = (otpCode:string):any=>
+	sdk.post('users.sendOtpActivate',{otpCode});
